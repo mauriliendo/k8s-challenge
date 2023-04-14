@@ -32,6 +32,6 @@ jobs:
       - name: deploy to eks prueba
         run: |
           kubectl get nodes -A
-          kubectl apply -f app-deploy.yaml -n ${{ env.namespaces }}
+          kubectl apply -f nginx-deployment.yaml -n ${{ env.namespaces }}
           
       
